@@ -1,0 +1,9 @@
+This project aimed at improving the learned named entity (NER) tags with the help of relation extraction (RE) between the named entities.
+
+Dataset for training NER models : CoNLL
+Two models Hidden Markov Model (HMM) and Conditional Random Field (CRF) were implemented to predict NER tags. CRF model performed better than HMM in this task.
+
+Dataset for training RE model : IJCNLP2011 New York Times
+The learned named entities were then fed to Maximum Entropy model to learn relationship between them. The learned relation was then used to refine the NER tags.
+
+Tools used : Python, CRF++, MaxEnt Toolkit
